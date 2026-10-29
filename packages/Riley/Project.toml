@@ -1,0 +1,29 @@
+name = "Riley"
+uuid = "91862f67-37ac-407d-8319-f6bcabbe7f3c"
+version = "0.1.0-DEV"
+
+[deps]
+Kleinian = "b39b6d0b-061c-4a58-9e72-c0a94641a5be"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[weakdeps]
+Farey = "25ec4c3e-37ad-41bf-bc1b-e639ba3b65a6"
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+
+[extensions]
+RileyFareyExt = "Farey"
+RileyMakieExt = ["Makie", "GeometryBasics"]
+
+[compat]
+Farey = "1"
+Kleinian = "0.1"
+GeometryBasics = "0.5"
+Makie = "0.24"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

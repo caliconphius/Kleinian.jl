@@ -1,0 +1,10 @@
+**/Manifest*.toml
+**/.DS_Store
+**/.julia/
+**/__pycache__/
+
+# Local editor state and Julia profiling output
+**/.zed/
+**/.vscode/
+**/*.cov
+**/*.mem

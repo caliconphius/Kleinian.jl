@@ -1,0 +1,11 @@
+[deps]
+Farey = "25ec4c3e-37ad-41bf-bc1b-e639ba3b65a6"
+Hecke = "3e1990a7-5d81-5526-99ce-9ba3ff248f21"
+Memoize = "c03570c3-d221-55d1-a50c-7939bbd78826"
+Oscar = "f1435218-dba5-11e9-1e4d-f1a5fab5fc13"
+StyledStrings = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
+Transducers = "28d57a85-8fef-5791-bfe6-a80928e7c999"
+UnicodeFun = "1cfade01-22cf-5700-b092-accc4b62d6e1"
+
+[sources]
+Farey = {path = "../../packages/Farey"}

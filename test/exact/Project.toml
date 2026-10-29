@@ -1,0 +1,9 @@
+[deps]
+Poincare = "9ae438c4-e19c-4b6c-ba0d-13a5923ab61e"
+Kleinian = "b39b6d0b-061c-4a58-9e72-c0a94641a5be"
+Nemo = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+Nemo = "0.56"
+julia = "1.10"

@@ -1,0 +1,40 @@
+name: Julia tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: ${{ matrix.suite }} / Julia ${{ matrix.julia }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - julia: '1.10'
+            suite: core
+          - julia: '1'
+            suite: core
+          - julia: '1'
+            suite: plotting
+          - julia: '1'
+            suite: exact
+    steps:
+      - uses: actions/checkout@v6
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: ${{ matrix.julia }}
+      - name: Run package and integration tests
+        env:
+          JULIA_NUM_THREADS: '2'
+        run: julia --startup-file=no scripts/test.jl ${{ matrix.suite }}

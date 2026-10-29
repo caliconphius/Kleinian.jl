@@ -1,0 +1,24 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Farey = "25ec4c3e-37ad-41bf-bc1b-e639ba3b65a6"
+GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+Kleinian = "b39b6d0b-061c-4a58-9e72-c0a94641a5be"
+Nemo = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+Poincare = "9ae438c4-e19c-4b6c-ba0d-13a5923ab61e"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Riley = "91862f67-37ac-407d-8319-f6bcabbe7f3c"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[sources]
+Farey = {path = "../packages/Farey"}
+Kleinian = {path = ".."}
+Poincare = {path = "../packages/Poincare"}
+Riley = {path = "../packages/Riley"}
+
+[compat]
+CairoMakie = "0.15"
+GLMakie = "0.13"
+Nemo = "0.56"
+julia = "1.10.10"

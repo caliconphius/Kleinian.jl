@@ -1,0 +1,29 @@
+name = "Poincare"
+uuid = "9ae438c4-e19c-4b6c-ba0d-13a5923ab61e"
+version = "0.1.0-DEV"
+
+[deps]
+Kleinian = "b39b6d0b-061c-4a58-9e72-c0a94641a5be"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+
+[weakdeps]
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+
+[extensions]
+PoincareMakieExt = ["Makie", "GeometryBasics"]
+
+[compat]
+Kleinian = "0.1"
+GeometryBasics = "0.5"
+Makie = "0.24"
+julia = "1.10"
+StaticArrays = "1.9"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[targets]
+test = ["Test", "Random"]

@@ -1,0 +1,12 @@
+[deps]
+Poincare = "9ae438c4-e19c-4b6c-ba0d-13a5923ab61e"
+Riley = "91862f67-37ac-407d-8319-f6bcabbe7f3c"
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+Kleinian = "b39b6d0b-061c-4a58-9e72-c0a94641a5be"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+CairoMakie = "0.15"
+GeometryBasics = "0.5"
+julia = "1.10"

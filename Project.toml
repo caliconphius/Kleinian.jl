@@ -1,0 +1,29 @@
+name = "Kleinian"
+uuid = "b39b6d0b-061c-4a58-9e72-c0a94641a5be"
+version = "0.1.0-DEV"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[weakdeps]
+GeometryBasics = "5c1252a2-5f33-56bf-86c9-59e7332b4326"
+Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+Nemo = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+
+[extensions]
+KleinianMakieExt = ["Makie", "GeometryBasics"]
+KleinianNemoExt = "Nemo"
+
+[compat]
+GeometryBasics = "0.5"
+Makie = "0.24"
+Nemo = "0.56"
+StaticArrays = "1.9.24"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
